@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+
+<div style="background:#16213e; padding:25px; border-radius:10px; max-width:500px; margin:auto;">
+    <h2 style="color:#e94560; margin-bottom:20px;">Add New Movie</h2>
+    
+    <form action="/movies" method="POST">
+        <div style="margin-bottom:15px;">
+            <label>Title *</label><br>
+            <input type="text" name="title" required style="width:100%; padding:10px; background:#1a1a2e; border:1px solid #333; color:white; border-radius:5px;">
+        </div>
+        
+        <div style="margin-bottom:15px;">
+            <label>Director</label><br>
+            <input type="text" name="director" style="width:100%; padding:10px; background:#1a1a2e; border:1px solid #333; color:white; border-radius:5px;">
+        </div>
+        
+        <div style="margin-bottom:15px;">
+            <label>Genre</label><br>
+            <input type="text" name="genre" placeholder="Action, Drama, Comedy..." style="width:100%; padding:10px; background:#1a1a2e; border:1px solid #333; color:white; border-radius:5px;">
+        </div>
+        
+        <div style="margin-bottom:15px;">
+            <label>Year</label><br>
+            <input type="number" name="year" min="1900" max="2030" style="width:100%; padding:10px; background:#1a1a2e; border:1px solid #333; color:white; border-radius:5px;">
+        </div>
+        
+        <div style="margin-bottom:15px;">
+            <label>Rating (0-10)</label><br>
+            <input type="number" name="rating" step="0.1" min="0" max="10" style="width:100%; padding:10px; background:#1a1a2e; border:1px solid #333; color:white; border-radius:5px;">
+        </div>
+        
+        <button type="submit" class="btn btn-add">Save Movie</button>
+        <a href="/" class="btn" style="background:#666;">Cancel</a>
+    </form>
+</div>

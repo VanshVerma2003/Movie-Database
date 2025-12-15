@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Database</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial; }
+        body { background: #1a1a2e; color: white; padding: 20px; }
+        h1 { color: #e94560; text-align: center; margin-bottom: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; background: #16213e; border-radius: 10px; overflow: hidden; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { background: #0f3460; color: #e94560; }
+        tr:hover { background: rgba(233,69,96,0.1); }
+        .btn { padding: 8px 15px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; color: white; margin: 2px; }
+        .btn-add { background: #e94560; margin-bottom: 20px; display: inline-block; }
+        .btn-edit { background: #17a2b8; font-size: 12px; }
+        .btn-delete { background: #dc3545; font-size: 12px; }
+        .rating { color: #ffc107; }
+        footer { text-align: center; margin-top: 30px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Database System</h1>
+        <%- body %>
+        <footer>Movie Database © 2025 - DBMS Project</footer>
+    </div>
+</body>
+</html>
